@@ -9,6 +9,11 @@ docker build -t quicksilver-node .
 ```bash
 docker run -d --name=quicksilver --restart always   -v <your_path>/.quicksilverd:/root/.quicksilverd -p 23656:26656 -p 23657:26657  quicksilver-node
 ```
+
+## 🛠 Download genesis.json (execute in config folder)
+```bash
+curl -s https://raw.githubusercontent.com/quicksilver-zone/networks/refs/heads/main/mainnet/quicksilver-2/genesis.json > genesis.json
+```
     
 ## 🛠 Creating a validator
 ```bash
