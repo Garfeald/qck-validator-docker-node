@@ -55,5 +55,5 @@ docker exec -ti quicksilver quicksilverd query distribution commission <your_ope
 
 ## 🛠 Show rewards
 ```bash
-docker exec -ti quicksilver quicksilverd query distribution rewards <your_operator_address>
+docker exec -ti quicksilver quicksilverd query distribution rewards <delegator_address>  <your_operator_address> --chain-id quicksilver-2 --output json
 ```
