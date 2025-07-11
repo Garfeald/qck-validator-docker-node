@@ -15,7 +15,7 @@ docker run -d --name=quicksilver --restart always   -v <your_path>/.quicksilverd
 curl -s https://raw.githubusercontent.com/quicksilver-zone/networks/refs/heads/main/mainnet/quicksilver-2/genesis.json > genesis.json
 ```
     
-## 🛠 Creating a validator
+## 🤖 Creating a validator
 ```bash
 docker exec -ti quicksilver quicksilverd tx staking create-validator \ 
 --amount=50000000uqck \
@@ -38,7 +38,7 @@ docker exec -ti quicksilver quicksilverd tx staking create-validator \
 quicksilver quicksilverd keys show <your_key_or_key_name> --bech val -a
 ```
 
-## 🛠 Get a commission
+## 💰 Get a commission
 ```bash
 docker exec -ti quicksilver quicksilverd tx distribution withdraw-rewards <your_operator_address> \ 
 --from=<your_key_name> \
@@ -48,12 +48,12 @@ docker exec -ti quicksilver quicksilverd tx distribution withdraw-rewards <your_
 --fees=5000uqck 
 ```
 
-## 🛠 Show commission
+## 💰 Show commission
 ```bash
 docker exec -ti quicksilver quicksilverd query distribution commission <your_operator_address>
 ```
 
-## 🛠 Show rewards
+## 💰 Show rewards
 ```bash
 docker exec -ti quicksilver quicksilverd query distribution rewards <delegator_address>  <your_operator_address> --chain-id quicksilver-2 --output json
 ```
