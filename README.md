@@ -55,5 +55,5 @@ docker exec -ti quicksilver quicksilverd query distribution commission <your_ope
 
 ## 🛠 Show rewards
 ```bash
-quicksilverd query distribution rewards <your_operator_address>
+docker exec -ti quicksilver quicksilverd query distribution rewards <your_operator_address>
 ```
