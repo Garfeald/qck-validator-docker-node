@@ -45,5 +45,10 @@ docker exec -ti quicksilver quicksilverd tx distribution withdraw-rewards <your_
 --chain-id=quicksilver-2 \
 --commission \ 
 --gas=auto \
---fees=20uqck 
+--fees=5000uqck 
+```
+
+## 🛠 Show commission
+```bash
+quicksilverd query distribution commission <ваш_valoper_адрес>
 ```
