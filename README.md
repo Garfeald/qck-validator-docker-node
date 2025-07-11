@@ -50,5 +50,5 @@ docker exec -ti quicksilver quicksilverd tx distribution withdraw-rewards <your_
 
 ## 🛠 Show commission
 ```bash
-quicksilverd query distribution commission <ваш_valoper_адрес>
+docker exec -ti quicksilver quicksilverd query distribution commission <ваш_valoper_адрес>
 ```
